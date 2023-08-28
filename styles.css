@@ -1,4 +1,38 @@
-body {
-    background-color: #F0EAD6;
-    font-family: Arial, sans-serif;
+h1 {
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 30px;
 }
+
+body {
+    background-color: #fffde8;
+    font-family: Georgia, sans-serif;
+    line-height: 1.5;
+    padding-right: 700px;
+}
+
+ul.inline-bulleted {
+  display: flex;
+  padding-left: 0px;
+
+}
+
+ul.inline-bulleted > li {
+    list-style: none;
+    display: flex;
+  }
+  ul.inline-bulleted li:after {
+    content: "\2023";
+    font-size: 14px;
+    color: #9c978e;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+#footer {
+    font-family: Georgia, sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+  } 
