@@ -8,10 +8,10 @@ h1 {
 }
 
 body {
-  background-color: #fffde8;
-  font-family: Georgia, sans-serif;
-  line-height: 1.5;
-  padding-right: 700px; /* You may need to adjust this for mobile */
+    background-color: #fffde8;
+    font-family: Georgia, sans-serif;
+    line-height: 1.5;
+    padding-right: 700px;
 }
 
 ul.inline-bulleted {
@@ -33,32 +33,7 @@ ul.inline-bulleted li:after {
 }
 
 #footer {
-  font-family: Georgia, sans-serif;
-  font-size: 14px;
-  margin: 20px 0;
-}
-
-/* Media query for screens smaller than 768px (typical mobile screens) */
-@media (max-width: 768px) {
-  body {
-      padding-right: 0; /* Remove right padding for mobile */
-  }
-
-  /* Adjust font size and spacing for mobile */
-  h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
-  }
-
-  /* Adjust padding for mobile navigation links */
-  ul.inline-bulleted {
-      padding-left: 0;
-  }
-
-  /* Adjust size and spacing of bullet points for mobile */
-  ul.inline-bulleted li:after {
-      font-size: 12px;
-      padding-left: 5px;
-      margin-right: 5px;
-  }
-}
+    font-family: Georgia, sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+  } 
