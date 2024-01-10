@@ -1,38 +1,64 @@
+/* Default styles for all screen sizes */
 h1 {
-    font-family: Georgia, sans-serif;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 26px;
-    margin-bottom: 30px;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 30px;
 }
 
 body {
-    background-color: #fffde8;
-    font-family: Georgia, sans-serif;
-    line-height: 1.5;
-    padding-right: 700px;
+  background-color: #feeeee;
+  font-family: Georgia, sans-serif;
+  line-height: 1.5;
+  padding-right: 700px;
 }
 
 ul.inline-bulleted {
   display: flex;
   padding-left: 0px;
-
 }
 
 ul.inline-bulleted > li {
-    list-style: none;
-    display: flex;
-  }
-  ul.inline-bulleted li:after {
-    content: "\2023";
-    font-size: 14px;
-    color: #9c978e;
-    padding-left: 10px;
-    margin-right: 10px;
-  }
+  list-style: none;
+  display: flex;
+}
+
+ul.inline-bulleted li:after {
+  content: "\2023";
+  font-size: 14px;
+  color: #9c978e;
+  padding-left: 10px;
+  margin-right: 10px;
+}
 
 #footer {
-    font-family: Georgia, sans-serif;
-    font-size: 14px;
-    margin: 20px 0;
-  } 
+  font-family: Georgia, sans-serif;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media (max-width: 768px) {
+  body {
+      padding-right: 0; /* Removes right padding for mobile */
+  }
+
+  /* Adjusts font size and spacing for mobile */
+  h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+
+  /* Adjusts padding for mobile navigation links */
+  ul.inline-bulleted {
+      padding-left: 0;
+  }
+
+  /* Adjusts size and spacing of bullet points for mobile */
+  ul.inline-bulleted li:after {
+      font-size: 12px;
+      padding-left: 5px;
+      margin-right: 5px;
+  }
+}
