@@ -62,3 +62,54 @@ ul.inline-bulleted li:after {
       margin-right: 5px;
   }
 }
+
+/* Container for project cards */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid layout */
+  gap: 20px; /* Spacing between cards */
+  padding: 20px;
+  margin: 0 auto; /* Centering the container */
+  max-width: 1200px; /* Maximum width of the container */
+}
+
+/* Individual project cards */
+.project-card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  margin-bottom: 20px; /* Spacing below each card */
+  border-radius: 8px; /* Optional: Rounded corners */
+  overflow: hidden; /* Keeps child elements within the card boundary */
+  background: none; /* Remove the white background */
+}
+
+/* Container for project images */
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts layout for up to 4 images */
+  gap: 10px; /* Spacing between images */
+}
+
+.project-images img {
+  width: 100%; /* Full width of the grid cell */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space below the image */
+  border-radius: 4px; /* Optional: Slightly rounded corners */
+}
+
+.project-card h3 {
+  padding: 0.5em; /* Padding around the title */
+  margin: 0; /* Remove default margin */
+  color: #333; /* Dark grey color for text */
+}
+
+.project-card p {
+  padding: 0 0.5em 0.5em; /* Padding around the description */
+  color: #666; /* Medium grey color for text */
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Hover effect on project cards */
+.project-card:hover {
+  transform: translateY(-5px); /* Move up slightly on hover */
+}
