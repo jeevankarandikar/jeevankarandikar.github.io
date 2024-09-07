@@ -10,6 +10,7 @@ h1 {
 body {
   background-color: #feeeee;
   font-family: Georgia, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   padding-right: 700px;
 }
@@ -25,7 +26,7 @@ ul.inline-bulleted > li {
 }
 
 ul.inline-bulleted li:after {
-  content: "\2023";
+  content: "\2024";
   font-size: 14px;
   color: #9c978e;
   padding-left: 10px;
@@ -63,7 +64,8 @@ ul.inline-bulleted li:after {
   }
 }
 
-/* Container for project cards */
+
+/* Project Page Styles */
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid layout */
@@ -73,7 +75,6 @@ ul.inline-bulleted li:after {
   max-width: 1200px; /* Maximum width of the container */
 }
 
-/* Individual project cards */
 .project-card {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
   transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
@@ -83,7 +84,6 @@ ul.inline-bulleted li:after {
   background: none; /* Remove the white background */
 }
 
-/* Container for project images */
 .project-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts layout for up to 4 images */
@@ -109,7 +109,47 @@ ul.inline-bulleted li:after {
   font-size: 0.9em; /* Slightly smaller font size */
 }
 
-/* Hover effect on project cards */
 .project-card:hover {
   transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+/* Favorites Page Styles */
+.favorites-page .favorites-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.favorites-page .favorites-container div {
+  text-align: left;
+}
+
+.favorites-page .favorites-container h2 {
+  font-family: Georgia, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.favorites-page .favorites-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.favorites-page .favorites-container ul li {
+  padding: 5px 0;
+  font-family: Georgia, sans-serif;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.favorites-page .favorites-container ul li:hover {
+  color: #000;
 }
